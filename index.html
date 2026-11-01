@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Explore the Acoustic Levitation project: its pitch presentation and interactive 3D lab unit.">
+  <title>Acoustic Levitation Project</title>
+  <style>
+    * { box-sizing: border-box; }
+    body {
+      margin: 0; min-height: 100vh; padding: 48px 20px;
+      font-family: "Segoe UI", system-ui, sans-serif;
+      color: #0b1230; background: #f3f5ff;
+      display: grid; place-items: center;
+    }
+    main { width: min(900px, 100%); }
+    .eyebrow { color: #0891b2; font-weight: 700; letter-spacing: .12em; text-transform: uppercase; }
+    h1 { font-size: clamp(2.2rem, 6vw, 4rem); line-height: 1.05; margin: 12px 0; }
+    .intro { color: #4a5578; font-size: 1.1rem; line-height: 1.6; max-width: 650px; }
+    .cards { display: grid; grid-template-columns: repeat(auto-fit, minmax(260px, 1fr)); gap: 18px; margin-top: 32px; }
+    .card {
+      background: white; border: 1px solid #d6dcf2; border-radius: 18px;
+      padding: 26px; box-shadow: 0 12px 32px rgba(20, 35, 80, .06);
+    }
+    .card h2 { margin: 0 0 10px; font-size: 1.4rem; }
+    .card p { color: #4a5578; line-height: 1.55; min-height: 76px; }
+    a {
+      display: inline-block; margin-top: 12px; padding: 11px 16px;
+      border-radius: 10px; background: #0891b2; color: white;
+      text-decoration: none; font-weight: 700;
+    }
+    a:hover { background: #0e7490; }
+    footer { margin-top: 30px; color: #66708f; font-size: .9rem; }
+  </style>
+</head>
+<body>
+  <main>
+    <div class="eyebrow">Project showcase</div>
+    <h1>Acoustic <span style="color:#7c3aed">Levitation</span></h1>
+    <p class="intro">Explore the project through its idea presentation and an interactive 3D model of the acoustic levitator.</p>
+    <section class="cards">
+      <article class="card">
+        <h2>Round 2 Pitch Presentation</h2>
+        <p>Learn about the problem, the acoustic levitation approach, technical feasibility, implementation plan and potential impact.</p>
+        <a href="pitch-presentation.html">Open presentation</a>
+      </article>
+      <article class="card">
+        <h2>Interactive 3D Lab Unit</h2>
+        <p>Explore the levitator model. Rotate and zoom the unit, adjust frequency and phase shift, and interact with the sample objects.</p>
+        <a href="3d-lab-unit.html">Open 3D model</a>
+      </article>
+    </section>
+    <footer>Acoustic Levitation Project</footer>
+  </main>
+</body>
+</html>

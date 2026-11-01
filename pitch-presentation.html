@@ -1,0 +1,169 @@
+<!DOCTYPE html>
+<html lang="en"><head><meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>Acoustic Levitation – Round 2 Pitch</title>
+<style>
+:root{--bg:#F3F5FF;--ink:#0B1230;--mut:#4A5578;--card:#FFFFFF;--line:#D6DCF2;--c1:#0891B2;--c2:#7C3AED;--c3:#D97706;color-scheme:light;box-sizing:border-box;padding-top:env(safe-area-inset-top,0px);padding-bottom:env(safe-area-inset-bottom,0px)}
+@media (prefers-color-scheme: dark){:root:not([data-theme="light"]){--bg:#070B20;--ink:#EEF2FF;--mut:#A3AFD6;--card:#111A3C;--line:#26336A;--c1:#22D3EE;--c2:#A78BFA;--c3:#FBBF24;color-scheme:dark}}
+:root[data-theme="dark"]{--bg:#070B20;--ink:#EEF2FF;--mut:#A3AFD6;--card:#111A3C;--line:#26336A;--c1:#22D3EE;--c2:#A78BFA;--c3:#FBBF24;color-scheme:dark}
+html{scroll-padding-top:env(safe-area-inset-top,0px);height:100%}
+body{margin:0;height:100%;background:var(--bg);color:var(--ink);font-family:"Segoe UI",system-ui,-apple-system,Roboto,sans-serif;overflow:hidden}
+#vp{position:relative;width:100%;height:100%;overflow:hidden}
+#st{position:absolute;left:0;top:0;width:1280px;height:720px;transform-origin:0 0}
+.s{position:absolute;inset:0;padding:56px 72px;opacity:0;pointer-events:none;transition:opacity .45s;background:radial-gradient(900px 500px at 85% 0%,color-mix(in srgb,var(--c2) 14%,transparent),transparent),var(--bg)}
+.s.on{opacity:1;pointer-events:auto}
+.tag{display:inline-block;font-size:16px;font-weight:700;letter-spacing:.08em;text-transform:uppercase;color:var(--c1);border:1.5px solid var(--c1);border-radius:99px;padding:5px 14px}
+h1{font-size:76px;line-height:1.02;margin:18px 0 12px;letter-spacing:-.02em}
+h2{font-size:42px;line-height:1.12;margin:16px 0 22px;letter-spacing:-.01em;max-width:900px}
+h1 em,h2 em{font-style:normal;background:linear-gradient(90deg,var(--c1),var(--c2));-webkit-background-clip:text;background-clip:text;color:transparent}
+p{font-size:21px;line-height:1.45;color:var(--mut);margin:0}
+.g{display:grid;gap:22px}.g3{grid-template-columns:repeat(3,1fr)}.g2{grid-template-columns:1fr 1fr}
+.c{background:var(--card);border:1px solid var(--line);border-radius:18px;padding:22px 24px}
+.c h3{margin:0 0 8px;font-size:24px}.c p{font-size:19px}
+.k{font-size:46px;font-weight:800;color:var(--c1);line-height:1}
+canvas{position:absolute;display:block}
+table{width:100%;border-collapse:collapse;font-size:19px;background:var(--card);border-radius:16px;overflow:hidden}
+th,td{text-align:left;padding:13px 16px;border-bottom:1px solid var(--line)}th{color:var(--mut);font-size:15px;text-transform:uppercase;letter-spacing:.06em}
+tr.us td{background:color-mix(in srgb,var(--c1) 14%,var(--card));font-weight:700}
+.flow{display:flex;align-items:stretch;gap:14px}.flow .c{flex:1;text-align:center}.flow b{align-self:center;color:var(--c1);font-size:28px}
+.n{display:inline-grid;place-items:center;width:38px;height:38px;border-radius:50%;background:var(--c1);color:var(--bg);font-weight:800;margin-bottom:10px}
+.ft{position:absolute;left:72px;right:72px;bottom:26px;display:flex;justify-content:space-between;font-size:14px;color:var(--mut)}
+#nav{position:absolute;right:16px;bottom:12px;display:flex;gap:8px;z-index:5}
+#nav button{background:var(--card);color:var(--ink);border:1px solid var(--line);border-radius:10px;font-size:18px;width:42px;height:38px;cursor:pointer}
+#pr{position:absolute;left:0;top:0;height:4px;background:linear-gradient(90deg,var(--c1),var(--c2));transition:width .4s;z-index:5}
+#nt{position:absolute;left:0;right:0;bottom:0;background:var(--card);border-top:2px solid var(--c1);padding:14px 24px;font-size:15px;line-height:1.4;display:none;z-index:6}
+.hint{font-size:15px;color:var(--mut);position:absolute}
+</style></head><body><div id="vp"><div id="pr"></div><div id="st">
+
+<section class="s" data-n="Hook (0:00–0:30). Stay silent 3 seconds on the floating bead, then: “Nothing is touching this bead. No magnet, no string, no air jet. It is held up by sound you cannot hear.” Then: what if the safest way to handle a sample is to never touch it?">
+<canvas id="cA" width="700" height="640" style="right:0;top:40px;width:700px;height:640px"></canvas>
+<span class="tag">Round 2 · Idea Presentation</span>
+<h1 style="margin-top:150px">Acoustic<br><em>Levitation</em></h1>
+<p style="font-size:28px;color:var(--ink);max-width:560px">Nothing is touching this bead.<br>It is held up by sound.</p>
+<p style="margin-top:22px">A low-cost, touch-free hand for delicate samples</p>
+<div class="ft"><span>Team- Caught In 4kHz · Anvesh '26 IDEATHON</span><span></span></div></section>
+
+<section class="s" data-n="Problem (0:30–1:10). Name who suffers: pharma labs, materials researchers, biology teams. Three problems: contamination, container walls, fragility. Land the line: if you can hold it without touching it, all three disappear.">
+<span class="tag">· Problem  </span>
+<h2>Every touch puts a delicate sample <em>at risk</em></h2>
+<div class="g g3">
+<div class="c"><div class="k">01</div><h3>Contamination</h3><p>Grippers and container walls spoil pure samples, critical in pharma and biology.</p></div>
+<div class="c"><div class="k">02</div><h3>Container effects</h3><p>Walls trigger unwanted reactions and crystallisation, distorting experiments.</p></div>
+<div class="c"><div class="k">03</div><h3>Fragility</h3><p>Droplets, cells and micro-parts are too delicate for tweezers and grippers.</p></div></div>
+<div class="c" style="margin-top:22px;border-color:var(--c1)"><h3>Who feels it</h3><p>Pharmaceutical R&amp;D labs · materials and crystal-growth researchers · biology and lab-on-chip teams</p></div>
+<div class="ft"><span>Remove the contact, and the problem goes with it.</span><span>2</span></div></section>
+
+<section class="s" data-n="Innovation (1:10–2:00). Acoustic levitation is proven physics. Our originality is turning it into a low-cost, steerable lab tool using off-the-shelf parts. Walk the table: others need strong magnets, charged samples, or gas flow.">
+<span class="tag">· Innovation </span><h2>Proven physics, <em>reimagined as a lab tool</em></h2>
+<table><tr><th>Method</th><th>What it needs</th><th>Limitation</th></tr>
+<tr><td>Magnetic</td><td>Very strong magnets</td><td>Costly, bulky, field-hungry</td></tr>
+<tr><td>Electrostatic</td><td>Charged sample, high voltage</td><td>Only suits charged samples</td></tr>
+<tr><td>Gas jet</td><td>Continuous gas flow</td><td>Flow disturbs delicate drops</td></tr>
+<tr class="us"><td>Acoustic (ours)</td><td>Ultrasound + off-the-shelf parts</td><td>Small, light objects only</td></tr></table>
+<div class="g g3" style="margin-top:22px"><div class="c"><h3>Low cost</h3><p>Hobby-grade parts, lab-grade result.</p></div><div class="c"><h3>Steerable</h3><p>Phase-shifting moves objects in space.</p></div><div class="c"><h3>Lab-focused</h3><p>Built around droplets and micro-samples.</p></div></div>
+<div class="ft"><span>Builds on open-source TinyLev, Marzo et al., 2017.</span><span>3</span></div></section>
+
+<section class="s" data-n="How it works (2:00–2:50). Transducers emit 40 kHz. A reflector sends it back, forming a standing wave. Wavelength is 343 m/s divided by 40,000 Hz, about 8.6 mm, so nodes sit 4.3 mm apart. Click the model to show steering by phase shift.">
+<canvas id="cB" width="620" height="560" style="right:30px;top:100px;width:620px;height:560px;cursor:pointer"></canvas>
+<span class="tag">· Technical feasibility</span><h2 style="max-width:560px">How 40 kHz sound <em>becomes a hand</em></h2>
+<div style="max-width:520px;display:grid;gap:14px">
+<div class="c"><span class="n">1</span> <b style="font-size:22px">Emit</b><p>Transducers send 40 kHz ultrasound, far above human hearing.</p></div>
+<div class="c"><span class="n">2</span> <b style="font-size:22px">Reflect</b><p>The wave returns and forms a standing wave.</p></div>
+<div class="c"><span class="n">3</span> <b style="font-size:22px">Trap</b><p>Small objects settle at pressure nodes. λ = 343 ÷ 40,000 ≈ 8.6 mm, so nodes sit λ/2 ≈ 4.3 mm apart.</p></div></div>
+<span class="hint" style="right:140px;bottom:40px">Click the model to steer</span>
+<div class="ft"><span></span><span>4</span></div></section>
+
+<section class="s" data-n="Build and limits (2:50–3:30). Four blocks, all off-the-shelf. Be upfront about limits: small light objects, mostly in air, heating possible. Say how you handle each. Cost target is an estimate: replace with your real bill of materials.">
+<span class="tag">· Technical feasibility </span><h2>Built from <em>off-the-shelf parts</em></h2>
+<div class="flow"><div class="c"><h3>Controller</h3><p>Arduino-class board makes precise 40 kHz timing.</p></div><b>→</b>
+<div class="c"><h3>Driver</h3><p>Amplifies the signal to power the transducers.</p></div><b>→</b>
+<div class="c"><h3>Transducers</h3><p>Array aimed at a reflector forms the standing wave.</p></div><b>→</b>
+<div class="c"><h3>Object</h3><p>Foam beads, droplets or parts hover at the nodes.</p></div></div>
+<div class="g g2" style="margin-top:22px"><div class="c" style="border-color:var(--c3)"><h3>Limits, and how we handle them</h3><p>Small, light objects only → scale with array size. Heating → duty-cycle control. Air-based → fine for lab work.</p></div>
+<div class="c"><h3>Cost target</h3><div class="k" style="margin:6px 0">≈ ₹5,000</div><p>Full build target. Proven by open-source TinyLev.</p></div></div>
+<div class="ft"><span>Reference: Marzo, Barnes, Drinkwater, “TinyLev,” 2017.</span><span>5</span></div></section>
+
+<section class="s" data-n="Implementation (3:30–4:00). Three phases with a milestone each. Month ranges and resources are placeholders: replace with your real plan, and state your ask (funding, lab access, mentors).">
+<span class="tag">· Implementation </span><h2>From prototype to <em>lab pilots</em> in 3 phases</h2>
+<div class="g g3">
+<div class="c"><div class="k">M1–2</div><h3 style="margin-top:10px">Prototype</h3><p>Single-axis levitator holding beads and droplets.</p><p style="margin-top:10px;color:var(--c1)"><b>Milestone:</b> stable trap for 10+ min</p></div>
+<div class="c"><div class="k">M3–4</div><h3 style="margin-top:10px">Control</h3><p>Phase-shift transducers to move and steer objects.</p><p style="margin-top:10px;color:var(--c1)"><b>Milestone:</b> controlled 3D move</p></div>
+<div class="c"><div class="k">M5–6</div><h3 style="margin-top:10px">Pilots</h3><p>Test with partner labs in pharma and materials.</p><p style="margin-top:10px;color:var(--c1)"><b>Milestone:</b> 1 lab pilot</p></div></div>
+<div class="c" style="margin-top:22px"><h3>What we need</h3><p>Funding for parts · lab access for testing · mentors in pharma and materials research</p></div>
+<div class="ft"><span></span><span>6</span></div></section>
+
+<section class="s" data-n="Impact (4:00–4:25). Lead with the pharma scenario: drying a drug droplet with zero wall contact. Then briefly the other three fields.">
+<span class="tag">· Impact &amp; relevance</span><h2>Where touch-free handling <em>creates value</em></h2>
+<div class="c" style="border-color:var(--c1);padding:28px 32px"><h3 style="font-size:30px;color:var(--c1)">Pharma &amp; drug research</h3><p style="font-size:23px;color:var(--ink)">Scenario: dry and test a drug droplet with no container wall, so no contamination and no unwanted crystallisation.</p></div>
+<div class="g g3" style="margin-top:22px">
+<div class="c"><h3>Materials &amp; space</h3><p>Mimic microgravity to study melts and crystal growth.</p></div>
+<div class="c"><h3>Precision assembly</h3><p>Place delicate micro-parts grippers would crush.</p></div>
+<div class="c"><h3>Biology &amp; medicine</h3><p>Handle cells and tiny samples for cleaner lab-on-chip work.</p></div></div>
+<div class="ft"><span></span><span>7</span></div></section>
+
+<section class="s" data-n="Scalability and sustainability (4:25–4:45). Modular arrays scale up; no consumables and low power keep it sustainable. Mention only the revenue paths you would really pursue.">
+<span class="tag">· Scalability &amp; sustainability </span><h2>Designed to grow, <em>built to last</em></h2>
+<div class="g g2">
+<div class="c"><h3 style="color:var(--c1)">Scale</h3><p>Standard parts make it easy to replicate. More transducers mean more traps, and larger arrays handle more samples. Same core design from classroom to lab.</p></div>
+<div class="c"><h3 style="color:var(--c1)">Sustain</h3><p>No consumables, no contact wear, low power draw. Reusable by design, with few parts to replace.</p></div></div>
+<div class="c" style="margin-top:22px"><h3>Revenue paths</h3><p>Lab modules · education kits · paid pilots with research labs</p></div>
+<div class="ft"><span></span><span>8</span></div></section>
+
+<section class="s" data-n="Close (4:45–5:00). Call back to the hook: remember the bead? Nothing touched it. Pause, then thank the judges and invite questions.">
+<span class="tag">· Summary</span><h2 style="font-size:58px;margin-top:40px">Remember the bead?<br><em>Nothing touched it.</em></h2>
+<div class="g g3" style="margin-top:30px"><div class="c"><h3>Problem</h3><p>Touch contaminates and damages.</p></div><div class="c"><h3>Solution</h3><p>Sound holds samples, low-cost and steerable.</p></div><div class="c"><h3>Next</h3><p>Pilots with real labs.</p></div></div>
+<p style="font-size:34px;color:var(--ink);margin-top:40px">Thank you · <span style="color:var(--c1)">Questions?</span></p>
+<div class="ft"><span>Team- Caught In 4kHz · Anvesh '26 IDEATHON</span><span>9</span></div></section>
+
+<div id="nav"><button id="pv" aria-label="Previous">‹</button><button id="nx" aria-label="Next">›</button></div>
+<div id="nt"></div></div></div>
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/r128/three.min.js"></script>
+<script>
+var S=[].slice.call(document.querySelectorAll(".s")),cur=0,vp=document.getElementById("vp"),st=document.getElementById("st"),nt=document.getElementById("nt");
+function fit(){var k=Math.min(vp.clientWidth/1280,vp.clientHeight/720);st.style.transform="translate("+((vp.clientWidth-1280*k)/2)+"px,"+((vp.clientHeight-720*k)/2)+"px) scale("+k+")"}
+function go(i,fromHash){cur=Math.max(0,Math.min(S.length-1,i));S.forEach(function(s,k){s.classList.toggle("on",k===cur)});
+document.getElementById("pr").style.width=((cur+1)/S.length*100)+"%";nt.textContent=S[cur].getAttribute("data-n");
+if(!fromHash){try{history.replaceState(null,"","#s"+(cur+1))}catch(e){}}}
+function fromHash(){var m=/^#s(\d+)$/.exec(location.hash);go(m?+m[1]-1:0,true)}
+document.getElementById("pv").onclick=function(){go(cur-1)};document.getElementById("nx").onclick=function(){go(cur+1)};
+document.addEventListener("keydown",function(e){if(e.key==="ArrowRight"||e.key===" "||e.key==="PageDown")go(cur+1);else if(e.key==="ArrowLeft"||e.key==="PageUp")go(cur-1);else if(e.key==="n"||e.key==="N")nt.style.display=nt.style.display==="block"?"none":"block"});
+var tx=0;vp.addEventListener("touchstart",function(e){tx=e.touches[0].clientX},{passive:true});vp.addEventListener("touchend",function(e){var d=e.changedTouches[0].clientX-tx;if(Math.abs(d)>50)go(cur+(d<0?1:-1))});
+window.addEventListener("resize",fit);window.addEventListener("hashchange",fromHash);fit();fromHash();
+
+try{
+var cs=getComputedStyle(document.documentElement),C=function(n){return new THREE.Color(cs.getPropertyValue(n).trim())},c1=C("--c1"),c3=C("--c3"),c2=C("--c2");
+var scenes=[];
+function mk(id,slide,fov,z){var cv=document.getElementById(id),r=new THREE.WebGLRenderer({canvas:cv,alpha:true,antialias:true});
+r.setPixelRatio(Math.min(devicePixelRatio||1,2));r.setSize(cv.clientWidth,cv.clientHeight,false);
+var sc=new THREE.Scene(),cam=new THREE.PerspectiveCamera(fov,cv.clientWidth/cv.clientHeight,.1,100);cam.position.set(0,.8,z);cam.lookAt(0,0,0);
+sc.add(new THREE.AmbientLight(0xffffff,.7));var pl=new THREE.PointLight(0xffffff,1.1);pl.position.set(4,5,6);sc.add(pl);
+return{cv:cv,r:r,sc:sc,cam:cam,slide:slide}}
+function bead(rad){return new THREE.Mesh(new THREE.SphereGeometry(rad,32,32),new THREE.MeshStandardMaterial({color:c3,emissive:c3,emissiveIntensity:.55,roughness:.3}))}
+
+/* Scene A: hook */
+var A=mk("cA",0,40,8),bA=bead(.4);A.sc.add(bA);var rings=[];
+for(var i=0;i<5;i++){var m=new THREE.Mesh(new THREE.TorusGeometry(1,.012,8,96),new THREE.MeshBasicMaterial({color:c1,transparent:true}));m.rotation.x=Math.PI/2;A.sc.add(m);rings.push(m)}
+[2.1,-2.1].forEach(function(y){var d=new THREE.Mesh(new THREE.CylinderGeometry(1.2,1.2,.14,48),new THREE.MeshStandardMaterial({color:c2,roughness:.4,metalness:.3}));d.position.y=y;A.sc.add(d)});
+var pts=new Float32Array(240*3);for(var j=0;j<pts.length;j++)pts[j]=(Math.random()-.5)*9;
+var pg=new THREE.BufferGeometry();pg.setAttribute("position",new THREE.BufferAttribute(pts,3));A.sc.add(new THREE.Points(pg,new THREE.PointsMaterial({color:c1,size:.04,transparent:true,opacity:.6})));
+A.draw=function(t){bA.position.y=Math.sin(t*1.6)*.06;rings.forEach(function(m,i){var f=(t*.35+i/5)%1;m.scale.setScalar(.3+f*2.6);m.material.opacity=(1-f)*.7});A.sc.rotation.y=t*.2}
+scenes.push(A);
+
+/* Scene B: standing wave levitator */
+var B=mk("cB",3,38,9.5),g=new THREE.Group();B.sc.add(g);
+var arr=new THREE.Group();for(var x=-2;x<=2;x++)for(var z=-2;z<=2;z++){var tdc=new THREE.Mesh(new THREE.CylinderGeometry(.17,.17,.14,20),new THREE.MeshStandardMaterial({color:c2,roughness:.35,metalness:.4}));tdc.position.set(x*.42,2.3,z*.42);arr.add(tdc)}g.add(arr);
+var refl=new THREE.Mesh(new THREE.BoxGeometry(2.4,.08,2.4),new THREE.MeshStandardMaterial({color:c1,transparent:true,opacity:.35}));refl.position.y=-2.3;g.add(refl);
+var H=.9,K=Math.PI/H,N=121,lines=[];
+for(var l=0;l<2;l++){var lg=new THREE.BufferGeometry();lg.setAttribute("position",new THREE.BufferAttribute(new Float32Array(N*3),3));var ln=new THREE.Line(lg,new THREE.LineBasicMaterial({color:c1}));ln.rotation.y=l*Math.PI/2;g.add(ln);lines.push(ln)}
+var beads=[],nrs=[];for(var n=0;n<5;n++){var b=bead(.15);g.add(b);beads.push(b);var ring=new THREE.Mesh(new THREE.TorusGeometry(.55,.012,8,64),new THREE.MeshBasicMaterial({color:c3,transparent:true,opacity:.6}));ring.rotation.x=Math.PI/2;g.add(ring);nrs.push(ring)}
+var sh=0,tgt=0;B.cv.addEventListener("click",function(){tgt=tgt?0:.45});
+B.draw=function(t){sh+=(tgt-sh)*.06;var ph=Math.cos(t*3);
+lines.forEach(function(ln){var a=ln.geometry.attributes.position;for(var i=0;i<N;i++){var y=-2.3+i*4.6/(N-1);a.setXYZ(i,.5*Math.cos(K*(y+2.3-sh))*ph,y,0)}a.needsUpdate=true});
+for(var n=0;n<5;n++){var y=-2.3+.45+n*H+sh;beads[n].position.y=y;nrs[n].position.y=y}
+g.rotation.y=t*.25}
+scenes.push(B);
+
+(function loop(t){requestAnimationFrame(loop);scenes.forEach(function(s){if(s.slide===cur)s.draw(t/1000),s.r.render(s.sc,s.cam)})})(0);
+}catch(e){console.warn("3D unavailable",e)}
+</script></body></html>
